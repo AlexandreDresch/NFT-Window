@@ -1,17 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-import {
-  View, Text
-} from 'react-native';
+import { View, Text, SafeAreaView, FlatList } from 'react-native';
 
 import { styles } from './styles';
+import { COLORS, NFTDAta } from '../constants'
 
 export function Home(){
   return (
     <View style={styles.container}>
-        <Text>
-            Home
-        </Text>
+        <SafeAreaView>
+
+        </SafeAreaView>
     </View>
   );
 }
