@@ -1,7 +1,9 @@
 import { StyleSheet } from 'react-native';
+import { COLORS, SIZES, FONTS, SHADOWS } from '../../../constants';
 
 export const styles = StyleSheet.create({
-  container: {
-    flex: 1,
+  iconImage: {
+    width: 24,
+    height: 24,
   }
 });

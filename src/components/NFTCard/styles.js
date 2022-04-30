@@ -18,5 +18,9 @@ export const styles = StyleSheet.create({
     height: '100%',
     borderTopLeftRadius: SIZES.font,
     borderTopRightRadius: SIZES.font
+  },
+  nftTitleContainer: {
+    width: '100%',
+    padding: SIZES.font
   }
 });
