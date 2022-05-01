@@ -2,7 +2,7 @@ import React from 'react';
 
 import { View, Image, Text } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
-import { CircleButton } from '../Buttons';
+import { CircleButton, RectButton } from '../Buttons';
 import { SubInfo, EthPrice, NFTTitle } from '../SubInfo';
 
 import { COLORS, SIZES, SHADOWS, assets } from '../../../constants';
@@ -22,7 +22,21 @@ export function NFTCard({data}){
       </View>
       <SubInfo />
       <View style={styles.nftTitleContainer}>
-        <NFTTitle />
+        <NFTTitle 
+          title={data.name}
+          subTitle={data.creator}
+          titleSize={SIZES.large}
+          subTitleSize={SIZES.small}
+        />
+
+        <View style={styles.ethPriceContainer}>
+          <EthPrice price={data.price} />
+          <RectButton 
+            minWidth={120}
+            fontSize={SIZES.font}
+            handlePress={() => navigation.navigate('Details', {data})}
+          />
+        </View>
       </View>
     </View>
   );

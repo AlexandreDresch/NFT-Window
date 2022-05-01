@@ -22,5 +22,11 @@ export const styles = StyleSheet.create({
   nftTitleContainer: {
     width: '100%',
     padding: SIZES.font
+  },
+  ethPriceContainer: {
+    marginTop: SIZES.font,
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
   }
 });

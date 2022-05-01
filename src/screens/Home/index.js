@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
 import { View, Text, SafeAreaView, FlatList } from 'react-native';
+
 import { NFTCard } from '../../components/NFTCard';
 import { HomeHeader } from '../../components/HomeHeader';
 import { FocusedStatusBar } from '../../components/FocusedStatusBar';
