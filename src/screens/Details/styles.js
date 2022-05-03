@@ -5,14 +5,6 @@ export const styles = StyleSheet.create({
   container: {
     flex: 1,
   },
-  detailsHeaderContainer: {
-    width: '100%',
-    height: 373
-  },
-  detailsHeaderImage: {
-    width: '100%',
-    height: '100%'
-  },
   buttonContainer: {
     width: '100%',
     position: 'absolute',
