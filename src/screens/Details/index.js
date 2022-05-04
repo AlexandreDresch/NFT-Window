@@ -2,8 +2,8 @@ import React from 'react';
 
 import { View, Text, SafeAreaView, Image, StatusBar, FlatList } from 'react-native';
 
-import { assets, SHADOWS, SIZES } from '../../../constants';
-import { CircleButton, RectButton } from '../../components/Buttons';
+import { SHADOWS, SIZES } from '../../../constants';
+import { RectButton } from '../../components/Buttons';
 import { FocusedStatusBar } from '../../components/FocusedStatusBar';
 import { DetailsDesc } from '../../components/DetailsDesc';
 import { DetailsBid } from '../../components/DetailsBid';
@@ -43,6 +43,11 @@ export function Details({ route, navigation}){
               <SubInfo />
               <View style={{ padding: SIZES.font }}>
                 <DetailsDesc data={data} />
+                {data.bids.length > 0 && (
+                  <Text style={styles.currentBid}>
+                    Current Bids
+                  </Text>
+                )}
               </View>
             </React.Fragment>
           )}

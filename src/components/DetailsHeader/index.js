@@ -2,8 +2,8 @@ import React from 'react';
 
 import { View, Image, StatusBar } from 'react-native';
 
-import { assets, SHADOWS, SIZES } from '../../../constants';
-import { CircleButton, RectButton } from '../../components/Buttons';
+import { assets } from '../../../constants';
+import { CircleButton } from '../../components/Buttons';
 
 import { styles } from './styles';
 

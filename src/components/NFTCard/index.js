@@ -1,11 +1,11 @@
 import React from 'react';
 
-import { View, Image, Text } from 'react-native';
+import { View, Image } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import { CircleButton, RectButton } from '../Buttons';
 import { SubInfo, EthPrice, NFTTitle } from '../SubInfo';
 
-import { COLORS, SIZES, SHADOWS, assets } from '../../../constants';
+import { SIZES, assets } from '../../../constants';
 import { styles } from './styles';
 
 export function NFTCard({data}){
